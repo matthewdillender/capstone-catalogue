@@ -92,7 +92,7 @@ nav {
 
 .card p {
   font-size: 1.8em;
-  
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
   position: absolute;
   text-align: center;
   text-indent: 10px;
