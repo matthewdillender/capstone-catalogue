@@ -19,13 +19,22 @@ body {
 
 }
 
+.card p {
+  font-size: 1.8em;
+  
+  position: absolute;
+  text-align: center;
+  text-indent: 10px;
+  top: 100px;
+
+}
 .card-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   max-width: 800px;
   padding: 20px;
-  padding-top: 1000px; /* Add top padding to push the cards down */
+  padding-top: 450px; /* Add top padding to push the cards down */
   overflow-x: auto;
 }
 
