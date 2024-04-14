@@ -64,6 +64,14 @@ z-index: 2;
   display: block;
   color: black;
 
+  .card-button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  
   
   
 }

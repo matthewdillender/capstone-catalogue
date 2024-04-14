@@ -58,3 +58,23 @@
 .card:nth-child(odd) {
   background-color: #f9f9f9;
 }
+.card-content {
+  /* Your card styles */
+}
+
+.description-window {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+
+.card-button:hover .description-window {
+  display: block;
+}
