@@ -5,9 +5,7 @@ export function CapstonesIndex(props) {
       {props.students.map((student, index) => (
         <div className="card" key={index}>
           <h2>{student.capstone_project_name}</h2>
-          <p>
-            {student.first_name} {student.last_name}
-          </p>
+          <p>{student.name}</p>
           <img src={student.screenshot} alt={student.capstone_project_name} />
         </div>
       ))}
