@@ -1,19 +1,16 @@
-import React from "react";
+import "./Modal.css";
 
-function Modal({ isOpen, onClose, title, description }) {
-  if (!isOpen) return null;
-
-  return (
-    <div className="modal">
-      <div className="modal-content">
-        <span className="close" onClick={onClose}>
-          &times;
-        </span>
-        <h2>{title}</h2>
-        <p>{description}</p>
+export function Modal(props) {
+  if (props.show) {
+    return (
+      <div className="modal-background">
+        <section className="modal-main">
+          {props.children}
+          <button className="close" type="button" onClick={props.onClose}>
+            &#x2715;
+          </button>
+        </section>
       </div>
-    </div>
-  );
+    );
+  }
 }
-
-export default Modal;

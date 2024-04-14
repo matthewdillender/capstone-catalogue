@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import CardButton from "./CardButton";
 
 export function CapstonesIndex({ students }) {
   const [showModal, setShowModal] = useState(false);
@@ -30,6 +29,7 @@ export function CapstonesIndex({ students }) {
           <h2>{student.capstone_project_name}</h2>
           <p>{student.name}</p>
           <img src={student.screenshot} alt={student.capstone_project_name} />
+          <button onClick={() => props.onShowStudent(student)}>More info</button>
         </div>
       ))}
       {showModal && selectedStudent && (
