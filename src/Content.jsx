@@ -8,7 +8,7 @@ const students = [
     first_name: "John",
     last_name: "Doe",
     capstone_project_name: "Online Marketplace",
-    screenshot: "https://example.com/John_Doe_screenshot.png",
+    screenshot: "https://img.freepik.com/free-vector/gradient-instagram-shop-logo-template_23-2149680701.jpg",
   },
   {
     first_name: "Jane",
