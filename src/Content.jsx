@@ -1,3 +1,7 @@
+/* eslint-disable no-unused-vars */
+import React from "react";
+import "./Card.css";
+
 import { CapstonesIndex } from "./CapstonesIndex";
 const students = [
   {
