@@ -6,40 +6,12 @@ body {
   align-items: center;
   height: 100vh;
   background-color: #f0f0f0;
-  
 }
 
 nav {
-position: relative;
-z-index: 2;
-
+  position: relative;
+  z-index: 2;
 }
-/* .navbar {
-  background-color: #517dd5;
-  padding: 10px 20px;
-}
-
-.navbar-nav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-
-.nav-item {
-  margin-right: 10px;
-}
-
-.nav-link {
-  text-decoration: none;
-  color: #fff;
-  padding: 8px 12px;
-  border-radius: 5px;
-}
-
-.nav-link:hover {
-  background-color: #555;
-} */
 
 .dropdown {
   position: relative;
@@ -60,21 +32,128 @@ z-index: 2;
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
 .dropdown-content a {
   display: block;
   color: black;
-
-  .card-button {
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-    padding: 0;
-  }
-  
-  
-  
-  
 }
-html {
-  scroll-behavior: smooth;
+
+.card-button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+}
+/* Modal styles */
+.modal {
+  display: block;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.card h2 {
+  font-size: 2em;
+  text-align: center;
+  position: absolute; /* Position the h2 element absolutely */
+  top: 10px; /* Adjust the top position as needed */
+  left: 50%; /* Align the h2 element to the horizontal center of the card */
+  transform: translateX(-50%); /* Move the h2 element left by half of its own width to center it */
+  margin: 0; /* Remove default margin */
+
+}
+
+.card p {
+  font-size: 1.8em;
+  
+  position: absolute;
+  text-align: center;
+  text-indent: 10px;
+  top: 100px;
+
+}
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 800px;
+  padding: 20px;
+  padding-top: 1200px; /* Add top padding to push the cards down */
+  overflow-x: auto;
+  /* z-index: 1; */
+}
+
+.card {
+  position: relative;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+  transition: box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%; /* Ensure the image takes up the full width of the card */
+  height: 50%; /* Set the height of the image to 50% of the card's height */
+  object-fit: cover; /* Maintain aspect ratio and cover the entire area */
+}
+.card:hover {
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.9);
+}
+
+.card::before {
+  content: '';
+  display: block;
+  padding-top: 100%; /* Aspect ratio 1:1 (square) */
+}
+
+.card:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+.card-content {
+  /* Your card styles */
+}
+
+.description-window {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+
+.card-button:hover .description-window {
+  display: block;
 }
