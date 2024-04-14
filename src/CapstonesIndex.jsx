@@ -1,4 +1,6 @@
 /* eslint-disable react/prop-types */
+// import { studentCard } from "./Card";
+
 export function CapstonesIndex(props) {
   return (
     <div className="card-grid">

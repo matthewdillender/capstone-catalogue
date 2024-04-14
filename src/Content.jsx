@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import "./Card.css";
+import { Modal } from "./Modal";
 
 import { CapstonesIndex } from "./CapstonesIndex";
 const students = [
@@ -63,6 +64,35 @@ const students = [
       "https://s1.mzstatic.com/us/r30/Purple5/v4/51/17/a3/5117a35b-8133-4d54-e7a2-96d93f842b3e/pr_source.png?downloadKey=1412984390_66f150135a73f0424a11cc40f6d4113d",
     description:
       "Fusce nec ligula nec nulla eleifend sollicitudin. Nam sagittis, felis vel bibendum aliquam, nulla sem fermentum justo, vitae tempor quam nulla id risus. Fusce feugiat orci sit amet arcu ultrices, in malesuada justo posuere. Integer consequat est vel arcu efficitur, at facilisis elit convallis. Integer nec dui dignissim, suscipit nisl vitae, consequat neque.",
+  },
+  {
+    name: "Sophia Garcia",
+    capstone_project_name: "Music Recommendation System",
+    screenshot: "https://cdn3.iconfinder.com/data/icons/mii-ui-vol-1/133/music-512.png",
+    description:
+      "Fusce nec ligula nec nulla eleifend sollicitudin. Nam sagittis, felis vel bibendum aliquam, nulla sem fermentum justo, vitae tempor quam nulla id risus. Fusce feugiat orci sit amet arcu ultrices, in malesuada justo posuere. Integer consequat est vel arcu efficitur, at facilisis elit convallis. Integer nec dui dignissim, suscipit nisl vitae, consequat neque.",
+  },
+  {
+    name: "Rob Williams",
+    capstone_project_name: "Recipe Sharing App",
+    screenshot:
+      "https://cdn.shopify.com/app-store/listing_images/158e4af652886027cc4d8339204f6af9/icon/COXlpr_Ug_ICEAE=.jpeg",
+    description:
+      "Integer nec libero ut turpis consequat venenatis. Curabitur congue vehicula libero, a lacinia sapien dapibus eget. Vivamus nec semper est. Phasellus id mi sed ligula iaculis luctus. Nam ut justo et felis dignissim molestie id a ex. Fusce vehicula dolor non metus dignissim, eget ultricies sem scelerisque. Maecenas non lorem sit amet justo tristique aliquam. Sed fringilla orci vel libero feugiat, at hendrerit nisi malesuada.",
+  },
+  {
+    name: "Jenny Brown",
+    capstone_project_name: "Travel Planner",
+    screenshot: "https://i.pinimg.com/originals/2a/54/ac/2a54ac497f9984435890f9b672763839.jpg",
+    description:
+      "Vestibulum fermentum purus at urna suscipit vehicula. Phasellus feugiat auctor mauris, ut feugiat magna vehicula eu. Quisque sed justo quis orci malesuada auctor. Sed vulputate eros sed ipsum pharetra, eget venenatis justo molestie. Integer eu dolor id urna lacinia interdum. Aliquam ac eros et ante lacinia auctor non ut turpis.",
+  },
+  {
+    name: "Maximus Jones",
+    capstone_project_name: "Language Learning Platform",
+    screenshot: "https://static-00.iconduck.com/assets.00/language-icon-2048x2048-ys7d03zv.png",
+    description:
+      "Nulla facilisi. Phasellus ac lorem a ligula tincidunt sagittis. Vivamus ac fringilla velit. Suspendisse potenti. Nullam eleifend arcu nec libero consequat, a fermentum libero posuere. Suspendisse potenti. Integer eget lorem ac ligula mattis suscipit vel eget justo. Cras luctus leo nec sapien ullamcorper aliquet.",
   },
 ];
 
